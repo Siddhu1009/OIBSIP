@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calculator.css"/>
+  <script src="calculator.js"></script>
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" placeholder="0" id="inputb">
+    <div class="cal">
+    <div class="cal1">
+      <button onclick="combine('(')">(</button>
+      <button onclick="combine(')')">)</button>
+      <button onclick="backspace()">del</button>
+      <button onclick="clearInput()">clear</button>
+    </div>
+    <div class="cal2">
+      <button onclick="combine('7')">7</button>
+      <button onclick="combine('8')">8</button>
+      <button onclick="combine('9')">9</button>
+      <button onclick="combine('%')">%</button>
+      <button onclick="root()">
+        <img src="F:\OASIS INFO BYTE\Calculator\sqrt img.jpg" width="20" height="15" /></button>
+    </div>
+    <div class="cal3">
+      <button onclick="combine('4')">4</button>
+      <button onclick="combine('5')">5</button>
+      <button onclick="combine('6')">6</button>
+      <button onclick="combine('*')">x</button>
+      <button onclick="combine('/')">/</button>
+    </div>
+    <div class="cal4">
+      <button onclick="combine('1')">1</button>
+      <button onclick="combine('2')">2</button>
+      <button onclick="combine('3')">3</button>
+      <button onclick="combine('+')">+</button>
+      <button onclick="combine('-')">-</button>
+    </div>
+    <div class="cal5">
+      <button onclick="combine('00')">00</button>
+      <button onclick="combine('0')">0</button>
+      <button onclick="combine('.')">.</button>
+      <button onclick="calculate()">Enter</button>
+    </div>
+    </div>
+  </div>
+</body>
+</html>
