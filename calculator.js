@@ -4,16 +4,16 @@ function combine(value) {
 }
 
 function clearInput() {
-  document.getElementById("inputb").value=" ";
+  document.getElementById("inputb").value = "";
 }
 
 function calculate() {
   var input = document.getElementById('inputb');
-  var result;
-  
+  var expression = input.value;
+
   try {
-    result = eval(input.value);
-    if (!isNaN(result)) {
+    var result = eval(expression);
+    if (Number.isFinite(result)) {
       input.value = result;
     } else {
       input.value = 'Error';
@@ -39,3 +39,4 @@ function root() {
     input.value = 'Error';
   }
 }
+
